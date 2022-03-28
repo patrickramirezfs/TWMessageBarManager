@@ -389,7 +389,7 @@ static UIColor *kTWDefaultMessageBarStyleSheetInfoStrokeColor = nil;
     if (!self.messageWindow)
     {
         self.messageWindow = [[TWMessageWindow alloc] init];
-        self.messageWindow.frame = [UIApplication sharedApplication].keyWindow.frame;
+        self.messageWindow.frame = [UIApplication sharedApplication].delegate.window.frame;
         self.messageWindow.hidden = NO;
         self.messageWindow.windowLevel = UIWindowLevelNormal;
         self.messageWindow.backgroundColor = [UIColor clearColor];
@@ -667,8 +667,9 @@ static UIColor *kTWDefaultMessageBarStyleSheetInfoStrokeColor = nil;
 
 - (CGRect)statusBarFrame
 {
-    CGRect windowFrame = NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1 ? [self orientFrame:[UIApplication sharedApplication].keyWindow.frame] : [UIApplication sharedApplication].keyWindow.frame;
-    CGRect statusFrame = NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1 ?  [self orientFrame:[UIApplication sharedApplication].statusBarFrame] : [UIApplication sharedApplication].statusBarFrame;
+   
+    CGRect windowFrame = NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1 ? [self orientFrame:[UIApplication sharedApplication].delegate.window.frame] : [UIApplication sharedApplication].delegate.window.frame;
+    CGRect statusFrame = NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1 ?  [self orientFrame:[UIApplication sharedApplication].delegate.window.windowScene.statusBarManager.statusBarFrame] : [UIApplication sharedApplication].delegate.window.windowScene.statusBarManager.statusBarFrame;
     return CGRectMake(windowFrame.origin.x, windowFrame.origin.y, windowFrame.size.width, statusFrame.size.height);
 }
 
