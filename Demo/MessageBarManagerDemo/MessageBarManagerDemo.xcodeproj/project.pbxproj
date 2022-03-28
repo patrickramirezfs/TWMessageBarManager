@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5549FD6B27E26782001B956E /* TWMessageBarManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5549FD6A27E26782001B956E /* TWMessageBarManager.podspec */; };
 		561DB437174AFADA006D7D1E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 561DB434174AFADA006D7D1E /* Default-568h@2x.png */; };
 		561DB438174AFADA006D7D1E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 561DB435174AFADA006D7D1E /* Default.png */; };
 		561DB439174AFADA006D7D1E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 561DB436174AFADA006D7D1E /* Default@2x.png */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5549FD6A27E26782001B956E /* TWMessageBarManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWMessageBarManager.podspec; sourceTree = "<group>"; };
 		561DB434174AFADA006D7D1E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		561DB435174AFADA006D7D1E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		561DB436174AFADA006D7D1E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		564982631741BF7A00077B8C /* MessageBarManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5549FD6A27E26782001B956E /* TWMessageBarManager.podspec */,
 				569FCDF21741C09300F2B74C /* App Delegate */,
 				56DE553817458AB20026B7D2 /* Constants */,
 				569FCDF51741C09300F2B74C /* Controllers */,
@@ -246,6 +249,7 @@
 				5669FE431766C47700B8630B /* icon-error@2x.png in Resources */,
 				5669FE441766C47700B8630B /* icon-info.png in Resources */,
 				5669FE451766C47700B8630B /* icon-info@2x.png in Resources */,
+				5549FD6B27E26782001B956E /* TWMessageBarManager.podspec in Resources */,
 				5669FE461766C47700B8630B /* icon-success.png in Resources */,
 				5669FE471766C47700B8630B /* icon-success@2x.png in Resources */,
 			);
